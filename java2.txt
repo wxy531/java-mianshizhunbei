@@ -1,0 +1,16 @@
+import java.util.*;
+public classMain{
+    public static void main(String[] args){
+        Scanner scan = newScanner(System.in);
+        while(scan.hasNext()){
+            String str = scan.nextLine();
+            System.out.println(getResult(str));
+        }
+    }
+    public static String getResult(String str){
+         
+         
+        return str.replaceAll("[A-Z]","")+str.replaceAll("[a-z]","");
+    }
+      
+}
